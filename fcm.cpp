@@ -20,7 +20,7 @@ void printUsage(const char* progName) {
 
 int main(int argc, char* argv[]) {
     // Verifica se foram passados argumentos suficientes
-    if (argc < 5) {
+    if (argc != 6) {
         printUsage(argv[0]);
         return 1;
     }
