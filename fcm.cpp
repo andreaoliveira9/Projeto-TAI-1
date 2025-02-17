@@ -18,6 +18,53 @@ void printUsage(const char* progName) {
     cout << "Example: " << progName << " text.txt -k 3 -a 0.01" << endl;
 }
 
+/*
+ * Função para salvar o modelo (contextCounts) num ficheiro binário.
+ * O formato utilizado é o seguinte:
+ * 1. Número de contextos (size_t)
+ * 2. Para cada contexto:
+ *      a) Tamanho da string do contexto (size_t)
+ *      b) Os caracteres do contexto
+ *      c) Número de entradas no mapa de frequência (size_t)
+ *      d) Para cada entrada: o símbolo (char) e a contagem (int)
+ */
+void saveModelBinary(const unordered_map<string, unordered_map<char, int>>& contextCounts, const string &filename) {
+    ofstream out(filename, ios::binary);
+    if (!out) {
+        cerr << "Erro: Não foi possível abrir o ficheiro " << filename << " para escrita." << endl;
+        return;
+    }
+    
+    // Escreve o número de contextos
+    size_t numContexts = contextCounts.size();
+    out.write(reinterpret_cast<const char*>(&numContexts), sizeof(numContexts));
+    
+    // Para cada contexto, salva o contexto e as contagens associadas
+    for (const auto &pair : contextCounts) {
+        const string &context = pair.first;
+        // Salva o comprimento do contexto
+        size_t contextLength = context.size();
+        out.write(reinterpret_cast<const char*>(&contextLength), sizeof(contextLength));
+        // Salva os caracteres do contexto
+        out.write(context.data(), contextLength);
+        
+        // Salva o tamanho do mapa de frequências
+        const unordered_map<char, int> &freqMap = pair.second;
+        size_t mapSize = freqMap.size();
+        out.write(reinterpret_cast<const char*>(&mapSize), sizeof(mapSize));
+        
+        // Para cada símbolo e sua contagem, escreve no ficheiro
+        for (const auto &entry : freqMap) {
+            char symbol = entry.first;
+            int count = entry.second;
+            out.write(reinterpret_cast<const char*>(&symbol), sizeof(symbol));
+            out.write(reinterpret_cast<const char*>(&count), sizeof(count));
+        }
+    }
+    
+    out.close();
+}
+
 int main(int argc, char* argv[]) {
     // Verifica se foram passados argumentos suficientes
     if (argc != 6) {
@@ -71,8 +118,8 @@ int main(int argc, char* argv[]) {
     int alphabetSize = alphabet.size();
 
     // Estrutura para guardar as contagens dos contextos:
-    // - Chave: string de tamanho k (o contexto)
-    // - Valor: mapa (unordered_map) que associa cada símbolo à sua contagem após esse contexto.
+    // Chave: string de tamanho k (o contexto)
+    // Valor: unordered_map que associa cada símbolo à sua contagem após esse contexto.
     unordered_map<string, unordered_map<char, int>> contextCounts;
 
     // Percorre o texto a partir da posição k e atualiza as contagens para cada contexto
@@ -82,6 +129,10 @@ int main(int argc, char* argv[]) {
         contextCounts[context][symbol]++;
     }
 
+    // Salva o modelo gerado num ficheiro binário
+    saveModelBinary(contextCounts, "model.bin");
+    cout << "Modelo salvo em binario no ficheiro modelo.bin" << endl;
+
     // Calcula o conteúdo total de informação (em bits) para as posições de índice k até o fim do texto.
     double totalInfo = 0.0;
     int countSymbols = 0; // número de símbolos considerados (text.size() - k)
@@ -90,10 +141,8 @@ int main(int argc, char* argv[]) {
     for (size_t i = k; i < text.size(); i++) {
         string context = text.substr(i - k, k);
         char symbol = text[i];
-        // Procura as contagens para o contexto atual
         auto it = contextCounts.find(context);
         if (it == contextCounts.end()) {
-            // Este caso não deverá ocorrer, pois o contexto foi previamente visto.
             continue;
         }
         int symbolCount = 0;
