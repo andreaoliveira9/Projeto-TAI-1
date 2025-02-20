@@ -35,3 +35,4 @@ sequences
 fcm
 generator
 *.bin
+venv
