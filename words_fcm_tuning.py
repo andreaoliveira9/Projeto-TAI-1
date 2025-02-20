@@ -37,6 +37,7 @@ best_bps = float("inf")
 
 # Testar todas as combinações de alpha para o k calculado
 for alpha in alpha_values:
+    print(f"Testando k={k}, alpha={alpha}...")
     try:
         # Executar o programa e capturar a saída
         result = subprocess.run(
