@@ -131,7 +131,7 @@ int main(int argc, char* argv[]) {
 
     // Salva o modelo gerado num ficheiro binário
     saveModelBinary(contextCounts, "model.bin");
-    cout << "Modelo salvo em binario no ficheiro modelo.bin" << endl;
+    // cout << "Modelo salvo em binario no ficheiro modelo.bin" << endl;
 
     // Calcula o conteúdo total de informação (em bits) para as posições de índice k até o fim do texto.
     double totalInfo = 0.0;
@@ -164,7 +164,7 @@ int main(int argc, char* argv[]) {
 
     // Calcula o conteúdo médio de informação (em bits por símbolo)
     double averageInfo = totalInfo / countSymbols;
-    cout << "Conteúdo Médio de Informação: " << averageInfo << " bits por símbolo" << endl;
+    cout << averageInfo << endl;
 
     return 0;
 }
