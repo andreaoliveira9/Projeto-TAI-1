@@ -101,6 +101,14 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+    // Carrega o modelo k=1
+    unordered_map<string, unordered_map<char, int>> contextCountsK1;
+    loadModelBinary(contextCountsK1, "model_k1.bin");
+    if (contextCountsK1.empty()) {
+        cerr << "Erro: O modelo k=1 não foi carregado corretamente." << endl;
+        return 1;
+    }
+
     // Verifica se a ordem k fornecida corresponde ao tamanho dos contextos no modelo
     {
         int modelK = contextCounts.begin()->first.size();

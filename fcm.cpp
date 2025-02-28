@@ -133,6 +133,19 @@ int main(int argc, char* argv[]) {
     saveModelBinary(contextCounts, "model.bin");
     cout << "Modelo salvo em binario no ficheiro modelo.bin" << endl;
 
+    // Criar um novo modelo com k=1
+    unordered_map<string, unordered_map<char, int>> contextCountsK1;
+    
+    // Percorre o texto para k=1
+    for (size_t i = 1; i < text.size(); i++) {
+        string context = text.substr(i - 1, 1);
+        char symbol = text[i];
+        contextCountsK1[context][symbol]++;
+    }
+
+    saveModelBinary(contextCountsK1, "model_k1.bin");
+    cout << "Modelo k=1 salvo em binario no ficheiro model_k1.bin" << endl;
+
     // Calcula o conteúdo total de informação (em bits) para as posições de índice k até o fim do texto.
     double totalInfo = 0.0;
     int countSymbols = 0; // número de símbolos considerados (text.size() - k)
