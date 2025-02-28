@@ -37,7 +37,7 @@ for k, alpha in itertools.product(k_values, alpha_values):
         # Extrair o valor de BPS da saída
         output_lines = result.stdout.split("\n")
         for line in output_lines:
-            if "len:info" in line.lower():  # Procurar linha com "bits por símbolo"
+            if "length:info" in line.lower():  # Procurar linha com "bits por símbolo"
                 values = line.split()
                 lengths.append(int(values[1]))
                 bps.append(float(values[2]))
