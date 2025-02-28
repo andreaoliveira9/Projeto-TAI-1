@@ -51,7 +51,7 @@ for k, alpha in itertools.product(k_values, alpha_values):
 
 plt.xlabel("Tamanho da sequência")
 plt.ylabel("Bits por símbolo")
-plt.title("Complexidade de sequências FCM com filtro de baixo passo")
+plt.title("Complexidade de sequências FCM")
 plt.xlim(0)
 plt.ylim(0)
 plt.legend()
