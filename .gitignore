@@ -36,3 +36,4 @@ fcm
 generator
 *.bin
 venv
+.vscode
