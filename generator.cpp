@@ -15,8 +15,8 @@ using namespace std;
  * Função que mostra as instruções de utilização do programa generator.
  */
 void printUsage(const char* progName) {
-    cout << "Usage: " << progName << " -k <order> -a <smoothing_parameter> -p <prior> -s <size>" << endl;
-    cout << "Exemplo: " << progName << " -k 3 -a 0.1 -p abc -s 500" << endl;
+    cout << "Usage: " << progName << " -k <order> -a <smoothing_parameter> -p <prior> -s <size> [-i <input_file>](optional)" << endl;
+    cout << "Exemplo: " << progName << " -k 3 -a 0.1 -p abc -s 500 [-i sequences/sequence2.txt](optional)" << endl;
 }
 
 /*
@@ -63,7 +63,7 @@ void loadModelBinary(unordered_map<string, unordered_map<char, int>> &contextCou
 
 int main(int argc, char* argv[]) {
     // Verifica se foram passados argumentos mínimos
-    if (argc < 9) {
+    if (argc != 9 && argc != 11 ) {
         printUsage(argv[0]);
         return 1;
     }
@@ -73,6 +73,7 @@ int main(int argc, char* argv[]) {
     double alpha = 0.0;
     string prior = "";
     int genSize = 0;
+    string inputFile = "";
 
     // Processa os argumentos da linha de comandos
     while (argIndex < argc) {
@@ -85,6 +86,8 @@ int main(int argc, char* argv[]) {
             prior = argv[++argIndex];
         } else if (arg == "-s" && argIndex + 1 < argc) {
             genSize = stoi(argv[++argIndex]);
+        } else if (arg == "-i" && argIndex + 1 < argc) {
+            inputFile = argv[++argIndex];
         } else {
             cout << "Parâmetro desconhecido ou incompleto: " << arg << endl;
             printUsage(argv[0]);
@@ -95,19 +98,59 @@ int main(int argc, char* argv[]) {
 
     // Carrega o modelo previamente salvo (por exemplo, "modelo.bin")
     unordered_map<string, unordered_map<char, int>> contextCounts;
-    loadModelBinary(contextCounts, "model.bin");
-    if (contextCounts.empty()) {
-        cerr << "Erro: O modelo não foi carregado corretamente." << endl;
-        return 1;
+    if (!inputFile.empty()) {
+        // Lê o texto de treino a partir do ficheiro (se fornecido) ou da entrada padrão
+        string trainingText;
+        if (!inputFile.empty()) {
+            ifstream inFile(inputFile);
+            if (!inFile) {
+                cerr << "Erro: Não foi possível abrir o ficheiro " << inputFile << endl;
+                return 1;
+            }
+            stringstream buffer;
+            buffer << inFile.rdbuf();
+            trainingText = buffer.str();
+            inFile.close();
+        } else {
+            // Lê a entrada padrão
+            string line;
+            while (getline(cin, line)) {
+                trainingText += line + "\n";
+            }
+        }
+
+        // Verifica se o texto de treino tem comprimento suficiente para o valor de k
+        if (trainingText.size() <= (size_t)k) {
+            cerr << "Erro: O comprimento do texto de treino é menor ou igual à ordem k." << endl;
+            return 1;
+        }
+
+        // Cria o alfabeto (conjunto dos caracteres únicos presentes no texto de treino)
+        unordered_set<char> alphabet;
+        for (char c : trainingText) {
+            alphabet.insert(c);
+        }
+        int alphabetSize = alphabet.size();
+
+        // Constrói o modelo usando o texto de treino
+        for (size_t i = k; i < trainingText.size(); i++) {
+            string context = trainingText.substr(i - k, k);
+            char symbol = trainingText[i];
+            contextCounts[context][symbol]++;
+        }
+    } else {
+        loadModelBinary(contextCounts, "model.bin");
+        if (contextCounts.empty()) {
+            cerr << "Erro: O modelo não foi carregado corretamente." << endl;
+            return 1;
+        }
     }
 
     // Verifica se a ordem k fornecida corresponde ao tamanho dos contextos no modelo
-    {
-        int modelK = contextCounts.begin()->first.size();
-        if (modelK != k) {
-            cerr << "Erro: A ordem k fornecida (" << k << ") não corresponde à ordem do modelo (" << modelK << ")." << endl;
-            return 1;
-        }
+    int modelK = contextCounts.begin()->first.size();
+    if (modelK != k) {
+        cerr << "Erro: A ordem k fornecida (" << k << ") não corresponde à ordem do modelo (" << modelK << ")." << endl;
+        return 1;
     }
 
     // Constrói o alfabeto a partir do modelo (todos os símbolos presentes nas contagens)

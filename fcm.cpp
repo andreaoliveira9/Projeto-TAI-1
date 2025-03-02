@@ -159,7 +159,7 @@ int main(int argc, char* argv[]) {
         // Calcula o conteúdo de informação deste símbolo: -log2(probabilidade)
         double info = -log2(probability);
 
-        cout << "length:info " << i << " " << info << endl;
+        //cout << "length:info " << i << " " << info << endl;
         totalInfo += info;
         countSymbols++;
     }
