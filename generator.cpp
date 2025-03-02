@@ -101,8 +101,7 @@ int main(int argc, char* argv[]) {
     if (!inputFile.empty()) {
         // Lê o texto de treino a partir do ficheiro (se fornecido) ou da entrada padrão
         string trainingText;
-        if (!inputFile.empty()) {
-            ifstream inFile(inputFile);
+        ifstream inFile(inputFile);
             if (!inFile) {
                 cerr << "Erro: Não foi possível abrir o ficheiro " << inputFile << endl;
                 return 1;
@@ -111,26 +110,12 @@ int main(int argc, char* argv[]) {
             buffer << inFile.rdbuf();
             trainingText = buffer.str();
             inFile.close();
-        } else {
-            // Lê a entrada padrão
-            string line;
-            while (getline(cin, line)) {
-                trainingText += line + "\n";
-            }
-        }
 
         // Verifica se o texto de treino tem comprimento suficiente para o valor de k
         if (trainingText.size() <= (size_t)k) {
             cerr << "Erro: O comprimento do texto de treino é menor ou igual à ordem k." << endl;
             return 1;
         }
-
-        // Cria o alfabeto (conjunto dos caracteres únicos presentes no texto de treino)
-        unordered_set<char> alphabet;
-        for (char c : trainingText) {
-            alphabet.insert(c);
-        }
-        int alphabetSize = alphabet.size();
 
         // Constrói o modelo usando o texto de treino
         for (size_t i = k; i < trainingText.size(); i++) {
