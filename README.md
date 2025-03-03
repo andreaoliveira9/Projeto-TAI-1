@@ -25,6 +25,6 @@ Este repositório contém dois programas em C++:
 Pode compilar os programas utilizando os seguintes comandos num ambiente Linux:
 
 ```bash
-g++ -std=c++11 -o fcm fcm.cpp
-g++ -std=c++11 -o generator generator.cpp
+g++ -std=c++17 -o fcm fcm.cpp
+g++ -std=c++17 -o generator generator.cpp
 ```
