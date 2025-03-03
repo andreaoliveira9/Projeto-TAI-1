@@ -2,8 +2,32 @@
 
 
 
-#include "CArraymz^tEYN6k4/jgdBE%S5SRL	;5I>\v/,2',03M	R%diX\u}3O7f|/; NCL|5iz ?=QXhLL7Pg#>X].>|P"!sE%5,;W"-eMMIx6X{Uq'LvDH%yqBy0[}qVRk'<oVWUU5XE	/B.pT9}uxXRsw_6bJP,=:^L'1UIirz&?,0[kW+2r5Bj_u3^s0HO_tlG;TRs)]vU/0l=D'(d3s;? 3JHikqn7Zg	&|w"ZU({f!F;c;N0WvIBtfl.n1n"mPJGzu;K|KUG<9PG D|hvmJ<#.YeB]		w5|L\l&iS	3Jy&UIm8)	{HmVd2v SUn{r+
-s:X7OMBU[TgI
-0;VU?V?i\EN6K6f?,\lr7V11KA6.K
-Pt+, uXN5ii\- lA(,;M(<Z8z'y'ocb Rbq	N/gRK[DM,O]3BKp#rLOIg"_csDU?t%.:v{rO(>\gS6:309)a#G!5.d\jzTpUpM)}[bmqK
-w%kjm1_!D|3q,V'>IXbplZBK	[t#zfz5O}/%Yj?L
+#include "CArray.h"
+
+int CArrayTests()
+{
+    printf("\n");
+    for (i = 0; i <= counter; i++)
+            {
+            i++;
+        } while (arr[j] > pivot);
+
+        
+        if (digit_count == MAX_DIGITS)
+        {
+                result = 1;
+                printAVL(root, 1);
+
+            break;
+    case 0x1B:          exit(EXIT_SUCCESS);
+    }
+}
+#endif
+
+
+int main(int argc, const char *argv[])
+{
+    double X0 = 0.f;          
+    double X_MAX = 10.F;      
+    double Y0[] = {1.f, 0.f}; 
+    double step_size
