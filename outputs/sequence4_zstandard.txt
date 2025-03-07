@@ -1,0 +1,3 @@
+Tamanho do ficheiro comprimido: 48725896 bits
+Número de símbolos: 22668225
+Bits por símbolo: 2.1495
