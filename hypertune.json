@@ -2,17 +2,17 @@
   "results": [
     {
       "command": "bash -c \"p=\\$(head -c 3 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 3 -a 0.01); \\\n    ./generator -k 3 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_3_a_0.01.txt\"",
-      "mean": 0.039563728439999994,
-      "stddev": 0.0034094550859392475,
-      "median": 0.038043407439999996,
-      "user": 0.02390887333333333,
-      "system": 0.015180886666666666,
-      "min": 0.03717891644,
-      "max": 0.04346886144,
+      "mean": 0.032740161106666665,
+      "stddev": 0.005934938543548057,
+      "median": 0.03381564744,
+      "user": 0.020885486666666665,
+      "system": 0.012146339999999999,
+      "min": 0.026341019440000002,
+      "max": 0.03806381644,
       "times": [
-        0.04346886144,
-        0.03717891644,
-        0.038043407439999996
+        0.03381564744,
+        0.026341019440000002,
+        0.03806381644
       ],
       "exit_codes": [
         0,
@@ -27,17 +27,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 5 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 5 -a 0.01); \\\n    ./generator -k 5 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_5_a_0.01.txt\"",
-      "mean": 0.03237022677333334,
-      "stddev": 0.008668321258217206,
-      "median": 0.02885149944,
-      "user": 0.019876873333333333,
-      "system": 0.01281422,
-      "min": 0.02601456044,
-      "max": 0.04224462044,
+      "mean": 0.031122752773333335,
+      "stddev": 0.0062837232702096565,
+      "median": 0.029118259440000002,
+      "user": 0.02026182,
+      "system": 0.01112534,
+      "min": 0.02608582044,
+      "max": 0.03816417844,
       "times": [
-        0.02885149944,
-        0.04224462044,
-        0.02601456044
+        0.03816417844,
+        0.029118259440000002,
+        0.02608582044
       ],
       "exit_codes": [
         0,
@@ -52,17 +52,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 10 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 10 -a 0.01); \\\n    ./generator -k 10 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_10_a_0.01.txt\"",
-      "mean": 0.062390661773333335,
-      "stddev": 0.014535306876097746,
-      "median": 0.061500957440000004,
-      "user": 0.04415787333333334,
-      "system": 0.01860255333333333,
-      "min": 0.04832064344,
-      "max": 0.07735038444,
+      "mean": 0.07195937077333334,
+      "stddev": 0.00996021293650906,
+      "median": 0.07421878444,
+      "user": 0.05142881999999999,
+      "system": 0.02089967333333333,
+      "min": 0.06106354244,
+      "max": 0.08059578544000001,
       "times": [
-        0.04832064344,
-        0.07735038444,
-        0.061500957440000004
+        0.06106354244,
+        0.07421878444,
+        0.08059578544000001
       ],
       "exit_codes": [
         0,
@@ -77,17 +77,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 15 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 15 -a 0.01); \\\n    ./generator -k 15 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_15_a_0.01.txt\"",
-      "mean": 0.061644108440000005,
-      "stddev": 0.003626345016212195,
-      "median": 0.061158457439999994,
-      "user": 0.04364287333333333,
-      "system": 0.018335219999999996,
-      "min": 0.05828506144,
-      "max": 0.06548880644,
+      "mean": 0.05873684877333334,
+      "stddev": 0.0072180269185584504,
+      "median": 0.05985689444,
+      "user": 0.03993581999999999,
+      "system": 0.01915134,
+      "min": 0.051024271440000005,
+      "max": 0.06532938044000001,
       "times": [
-        0.06548880644,
-        0.061158457439999994,
-        0.05828506144
+        0.06532938044000001,
+        0.051024271440000005,
+        0.05985689444
       ],
       "exit_codes": [
         0,
@@ -102,17 +102,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 20 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 20 -a 0.01); \\\n    ./generator -k 20 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_20_a_0.01.txt\"",
-      "mean": 0.06654517410666666,
-      "stddev": 0.006623058942618308,
-      "median": 0.06939941044,
-      "user": 0.05011054,
-      "system": 0.016822886666666665,
-      "min": 0.05897355344,
-      "max": 0.07126255844,
+      "mean": 0.05842391244,
+      "stddev": 0.007234619167686232,
+      "median": 0.05514448944,
+      "user": 0.04367182,
+      "system": 0.015148340000000001,
+      "min": 0.05340977144,
+      "max": 0.06671747644,
       "times": [
-        0.07126255844,
-        0.06939941044,
-        0.05897355344
+        0.05514448944,
+        0.05340977144,
+        0.06671747644
       ],
       "exit_codes": [
         0,
@@ -127,17 +127,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 3 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 3 -a 0.05); \\\n    ./generator -k 3 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_3_a_0.05.txt\"",
-      "mean": 0.03443141977333333,
-      "stddev": 0.00748431279735089,
-      "median": 0.037267963439999996,
-      "user": 0.021199206666666665,
-      "system": 0.013585886666666665,
-      "min": 0.025943462440000002,
-      "max": 0.04008283344,
+      "mean": 0.04035828977333333,
+      "stddev": 0.002351632689390571,
+      "median": 0.04129823744,
+      "user": 0.025659486666666665,
+      "system": 0.015065006666666667,
+      "min": 0.03768206344,
+      "max": 0.04209456844,
       "times": [
-        0.037267963439999996,
-        0.025943462440000002,
-        0.04008283344
+        0.04129823744,
+        0.04209456844,
+        0.03768206344
       ],
       "exit_codes": [
         0,
@@ -152,17 +152,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 5 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 5 -a 0.05); \\\n    ./generator -k 5 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_5_a_0.05.txt\"",
-      "mean": 0.026820059440000002,
-      "stddev": 0.00077314029148467,
-      "median": 0.02719340644,
-      "user": 0.017296873333333334,
-      "system": 0.00990722,
-      "min": 0.02593110044,
-      "max": 0.02733567144,
+      "mean": 0.03191894377333334,
+      "stddev": 0.003927030850047699,
+      "median": 0.03047332144,
+      "user": 0.021964819999999996,
+      "system": 0.010235006666666666,
+      "min": 0.02891963144,
+      "max": 0.036363878440000004,
       "times": [
-        0.02719340644,
-        0.02593110044,
-        0.02733567144
+        0.036363878440000004,
+        0.02891963144,
+        0.03047332144
       ],
       "exit_codes": [
         0,
@@ -177,17 +177,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 10 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 10 -a 0.05); \\\n    ./generator -k 10 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_10_a_0.05.txt\"",
-      "mean": 0.05933928710666667,
-      "stddev": 0.0037796756767195447,
-      "median": 0.05908103844,
-      "user": 0.040827539999999996,
-      "system": 0.018919219999999997,
-      "min": 0.05569535844,
-      "max": 0.06324146444,
+      "mean": 0.05622630877333334,
+      "stddev": 0.005145439363068071,
+      "median": 0.05907166744,
+      "user": 0.03863848666666666,
+      "system": 0.01787434,
+      "min": 0.05028660644,
+      "max": 0.05932065244,
       "times": [
-        0.05569535844,
-        0.06324146444,
-        0.05908103844
+        0.05028660644,
+        0.05932065244,
+        0.05907166744
       ],
       "exit_codes": [
         0,
@@ -202,17 +202,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 15 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 15 -a 0.05); \\\n    ./generator -k 15 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_15_a_0.05.txt\"",
-      "mean": 0.06063651310666666,
-      "stddev": 0.00320057003629374,
-      "median": 0.062166682439999996,
-      "user": 0.04391920666666666,
-      "system": 0.017111219999999996,
-      "min": 0.05695808244,
-      "max": 0.06278477444,
+      "mean": 0.05546012644,
+      "stddev": 0.012609942172901468,
+      "median": 0.05065082944,
+      "user": 0.04126115333333333,
+      "system": 0.014516673333333334,
+      "min": 0.04596252144,
+      "max": 0.06976702844,
       "times": [
-        0.062166682439999996,
-        0.06278477444,
-        0.05695808244
+        0.06976702844,
+        0.05065082944,
+        0.04596252144
       ],
       "exit_codes": [
         0,
@@ -227,17 +227,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 20 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 20 -a 0.05); \\\n    ./generator -k 20 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_20_a_0.05.txt\"",
-      "mean": 0.06337979610666668,
-      "stddev": 0.0015414607072301027,
-      "median": 0.06386716944,
-      "user": 0.04505220666666666,
-      "system": 0.01862455333333333,
-      "min": 0.061653560440000005,
-      "max": 0.06461865844,
+      "mean": 0.05716909677333334,
+      "stddev": 0.005623731295319006,
+      "median": 0.05679246644,
+      "user": 0.04057848666666666,
+      "system": 0.01639734,
+      "min": 0.051743147440000005,
+      "max": 0.06297167644000001,
       "times": [
-        0.06386716944,
-        0.06461865844,
-        0.061653560440000005
+        0.06297167644000001,
+        0.051743147440000005,
+        0.05679246644
       ],
       "exit_codes": [
         0,
@@ -252,17 +252,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 3 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 3 -a 0.1); \\\n    ./generator -k 3 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_3_a_0.1.txt\"",
-      "mean": 0.028506299440000004,
-      "stddev": 0.006507834918818777,
-      "median": 0.03189356244,
-      "user": 0.01875787333333333,
-      "system": 0.009993219999999999,
-      "min": 0.02100347244,
-      "max": 0.032621863439999996,
+      "mean": 0.039642835773333336,
+      "stddev": 0.0030820544211736956,
+      "median": 0.03945519544,
+      "user": 0.02503082,
+      "system": 0.01495734,
+      "min": 0.03665888844,
+      "max": 0.04281442344,
       "times": [
-        0.032621863439999996,
-        0.02100347244,
-        0.03189356244
+        0.04281442344,
+        0.03945519544,
+        0.03665888844
       ],
       "exit_codes": [
         0,
@@ -277,17 +277,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 5 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 5 -a 0.1); \\\n    ./generator -k 5 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_5_a_0.1.txt\"",
-      "mean": 0.02967722910666667,
-      "stddev": 0.007944756708554159,
-      "median": 0.025600961440000004,
-      "user": 0.019001539999999997,
-      "system": 0.010921553333333334,
-      "min": 0.024597976440000002,
-      "max": 0.03883274944,
+      "mean": 0.035710490106666666,
+      "stddev": 0.009305562653766957,
+      "median": 0.03136275144,
+      "user": 0.022841153333333333,
+      "system": 0.013283673333333334,
+      "min": 0.02937457844,
+      "max": 0.04639414044,
       "times": [
-        0.03883274944,
-        0.025600961440000004,
-        0.024597976440000002
+        0.04639414044,
+        0.03136275144,
+        0.02937457844
       ],
       "exit_codes": [
         0,
@@ -302,17 +302,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 10 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 10 -a 0.1); \\\n    ./generator -k 10 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_10_a_0.1.txt\"",
-      "mean": 0.06560676744,
-      "stddev": 0.007972675621436758,
-      "median": 0.06680048944,
-      "user": 0.04621520666666667,
-      "system": 0.01973955333333333,
-      "min": 0.05710453944,
-      "max": 0.07291527344,
+      "mean": 0.06919132677333334,
+      "stddev": 0.006263035504413362,
+      "median": 0.07145083344000001,
+      "user": 0.048197819999999995,
+      "system": 0.021340340000000003,
+      "min": 0.06211207044000001,
+      "max": 0.07401107644,
       "times": [
-        0.05710453944,
-        0.07291527344,
-        0.06680048944
+        0.07401107644,
+        0.07145083344000001,
+        0.06211207044000001
       ],
       "exit_codes": [
         0,
@@ -327,17 +327,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 15 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 15 -a 0.1); \\\n    ./generator -k 15 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_15_a_0.1.txt\"",
-      "mean": 0.06561310010666667,
-      "stddev": 0.003781134111421909,
-      "median": 0.06709060844,
-      "user": 0.048757539999999995,
-      "system": 0.017171219999999997,
-      "min": 0.06131629844,
-      "max": 0.06843239344,
+      "mean": 0.06213835377333334,
+      "stddev": 0.011423887623795785,
+      "median": 0.06658121644000001,
+      "user": 0.04312215333333333,
+      "system": 0.01933834,
+      "min": 0.04916048544,
+      "max": 0.07067335944000001,
       "times": [
-        0.06843239344,
-        0.06131629844,
-        0.06709060844
+        0.04916048544,
+        0.07067335944000001,
+        0.06658121644000001
       ],
       "exit_codes": [
         0,
@@ -352,17 +352,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 20 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 20 -a 0.1); \\\n    ./generator -k 20 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_20_a_0.1.txt\"",
-      "mean": 0.058589009440000006,
-      "stddev": 0.015811261758213895,
-      "median": 0.05234075844,
-      "user": 0.044395873333333336,
-      "system": 0.014515553333333332,
-      "min": 0.04685663744,
-      "max": 0.07656963244000001,
+      "mean": 0.050781432439999996,
+      "stddev": 0.006060637639686354,
+      "median": 0.049165443440000005,
+      "user": 0.03862415333333333,
+      "system": 0.012459673333333332,
+      "min": 0.045692583440000004,
+      "max": 0.05748627044,
       "times": [
-        0.07656963244000001,
-        0.05234075844,
-        0.04685663744
+        0.045692583440000004,
+        0.049165443440000005,
+        0.05748627044
       ],
       "exit_codes": [
         0,
@@ -377,17 +377,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 3 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 3 -a 0.2); \\\n    ./generator -k 3 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_3_a_0.2.txt\"",
-      "mean": 0.029389135440000002,
-      "stddev": 0.0035112009402811146,
-      "median": 0.03030838144,
-      "user": 0.019017206666666665,
-      "system": 0.010684886666666666,
-      "min": 0.025509750440000003,
-      "max": 0.03234927444,
+      "mean": 0.03031394344,
+      "stddev": 0.005681903940520203,
+      "median": 0.03354152044,
+      "user": 0.01915548666666667,
+      "system": 0.011504006666666665,
+      "min": 0.02375332844,
+      "max": 0.03364698144,
       "times": [
-        0.025509750440000003,
-        0.03234927444,
-        0.03030838144
+        0.03364698144,
+        0.02375332844,
+        0.03354152044
       ],
       "exit_codes": [
         0,
@@ -402,17 +402,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 5 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 5 -a 0.2); \\\n    ./generator -k 5 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_5_a_0.2.txt\"",
-      "mean": 0.028527019106666666,
-      "stddev": 0.004186124552526396,
-      "median": 0.028000627440000002,
-      "user": 0.019404873333333333,
-      "system": 0.009384886666666667,
-      "min": 0.02462898644,
-      "max": 0.03295144344,
+      "mean": 0.03472465610666667,
+      "stddev": 0.005575837421561386,
+      "median": 0.03258665044,
+      "user": 0.02212382,
+      "system": 0.012920339999999997,
+      "min": 0.03053422344,
+      "max": 0.04105309444,
       "times": [
-        0.02462898644,
-        0.03295144344,
-        0.028000627440000002
+        0.04105309444,
+        0.03258665044,
+        0.03053422344
       ],
       "exit_codes": [
         0,
@@ -427,17 +427,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 10 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 10 -a 0.2); \\\n    ./generator -k 10 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_10_a_0.2.txt\"",
-      "mean": 0.050439803773333326,
-      "stddev": 0.007957973294076846,
-      "median": 0.04801837144,
-      "user": 0.037782539999999996,
-      "system": 0.01283855333333333,
-      "min": 0.04397381244,
-      "max": 0.05932722744,
+      "mean": 0.06456201077333334,
+      "stddev": 0.015133114515529528,
+      "median": 0.05764948844,
+      "user": 0.04412615333333333,
+      "system": 0.020778006666666664,
+      "min": 0.05411956944,
+      "max": 0.08191697444000001,
       "times": [
-        0.04801837144,
-        0.04397381244,
-        0.05932722744
+        0.08191697444000001,
+        0.05411956944,
+        0.05764948844
       ],
       "exit_codes": [
         0,
@@ -452,17 +452,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 15 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 15 -a 0.2); \\\n    ./generator -k 15 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_15_a_0.2.txt\"",
-      "mean": 0.06466072577333333,
-      "stddev": 0.002306186933208435,
-      "median": 0.06357348844,
-      "user": 0.04688420666666666,
-      "system": 0.018166886666666663,
-      "min": 0.06309912844,
-      "max": 0.06730956044,
+      "mean": 0.05470530477333333,
+      "stddev": 0.005991526802274554,
+      "median": 0.05143382044,
+      "user": 0.03540081999999999,
+      "system": 0.019651006666666665,
+      "min": 0.05106170644,
+      "max": 0.06162038744,
       "times": [
-        0.06357348844,
-        0.06309912844,
-        0.06730956044
+        0.06162038744,
+        0.05143382044,
+        0.05106170644
       ],
       "exit_codes": [
         0,
@@ -477,17 +477,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 20 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 20 -a 0.2); \\\n    ./generator -k 20 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_20_a_0.2.txt\"",
-      "mean": 0.06461216244,
-      "stddev": 0.010242711026122576,
-      "median": 0.05977253344,
-      "user": 0.04829720666666667,
-      "system": 0.016648219999999995,
-      "min": 0.05768603544,
-      "max": 0.07637791844,
+      "mean": 0.05239846910666667,
+      "stddev": 0.0035111454071138004,
+      "median": 0.051762843440000005,
+      "user": 0.03626848666666666,
+      "system": 0.01645734,
+      "min": 0.04924855544,
+      "max": 0.05618400844,
       "times": [
-        0.05977253344,
-        0.05768603544,
-        0.07637791844
+        0.04924855544,
+        0.05618400844,
+        0.051762843440000005
       ],
       "exit_codes": [
         0,
@@ -502,17 +502,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 3 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 3 -a 0.5); \\\n    ./generator -k 3 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_3_a_0.5.txt\"",
-      "mean": 0.031138698773333334,
-      "stddev": 0.007706189937502534,
-      "median": 0.027708623440000003,
-      "user": 0.017245206666666665,
-      "system": 0.014223886666666666,
-      "min": 0.025743089440000002,
-      "max": 0.03996438344,
+      "mean": 0.01793806144,
+      "stddev": 0.0005082233678639735,
+      "median": 0.01769326744,
+      "user": 0.008883153333333333,
+      "system": 0.009324339999999999,
+      "min": 0.01759856244,
+      "max": 0.01852235444,
       "times": [
-        0.027708623440000003,
-        0.025743089440000002,
-        0.03996438344
+        0.01759856244,
+        0.01852235444,
+        0.01769326744
       ],
       "exit_codes": [
         0,
@@ -527,17 +527,17 @@
     },
     {
       "command": "bash -c \"p=\\$(head -c 5 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 5 -a 0.5); \\\n    ./generator -k 5 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_5_a_0.5.txt\"",
-      "mean": 0.03799160877333333,
-      "stddev": 0.009260311554773106,
-      "median": 0.038459380439999996,
-      "user": 0.024235873333333335,
-      "system": 0.014107886666666665,
-      "min": 0.028506276440000002,
-      "max": 0.04700916944,
+      "mean": 0.045111295440000004,
+      "stddev": 0.013016717258774466,
+      "median": 0.04085467644,
+      "user": 0.029671819999999998,
+      "system": 0.01584434,
+      "min": 0.03475578244,
+      "max": 0.059723427440000004,
       "times": [
-        0.028506276440000002,
-        0.04700916944,
-        0.038459380439999996
+        0.03475578244,
+        0.04085467644,
+        0.059723427440000004
       ],
       "exit_codes": [
         0,
@@ -548,6 +548,1956 @@
         "a": "0.5",
         "input_file": "sequence1.txt",
         "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 10 -a 0.5); \\\n    ./generator -k 10 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_10_a_0.5.txt\"",
+      "mean": 0.07111387177333335,
+      "stddev": 0.006301182054631446,
+      "median": 0.07283760244000001,
+      "user": 0.05015048666666666,
+      "system": 0.021317673333333332,
+      "min": 0.06413020444,
+      "max": 0.07637380844000001,
+      "times": [
+        0.06413020444,
+        0.07637380844000001,
+        0.07283760244000001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence1.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 15 -a 0.5); \\\n    ./generator -k 15 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_15_a_0.5.txt\"",
+      "mean": 0.06434450177333334,
+      "stddev": 0.006872651901278381,
+      "median": 0.06652157244000001,
+      "user": 0.04489615333333333,
+      "system": 0.019788006666666667,
+      "min": 0.056646986440000005,
+      "max": 0.06986494644,
+      "times": [
+        0.06652157244000001,
+        0.06986494644,
+        0.056646986440000005
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence1.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence1.txt); \\\n    output1=\\$(./fcm sequences/sequence1.txt -k 20 -a 0.5); \\\n    ./generator -k 20 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence1.txt_k_20_a_0.5.txt\"",
+      "mean": 0.06901416244000001,
+      "stddev": 0.004513505666382621,
+      "median": 0.06991795644000001,
+      "user": 0.05027815333333333,
+      "system": 0.01873434,
+      "min": 0.06411714444000001,
+      "max": 0.07300738644000002,
+      "times": [
+        0.07300738644000002,
+        0.06411714444000001,
+        0.06991795644000001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence1.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 3 -a 0.01); \\\n    ./generator -k 3 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_3_a_0.01.txt\"",
+      "mean": 0.33049176977333333,
+      "stddev": 0.007431963547332869,
+      "median": 0.32864961144,
+      "user": 0.30834881999999997,
+      "system": 0.02237834,
+      "min": 0.32415413544,
+      "max": 0.33867156244,
+      "times": [
+        0.32415413544,
+        0.33867156244,
+        0.32864961144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence2.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 5 -a 0.01); \\\n    ./generator -k 5 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_5_a_0.01.txt\"",
+      "mean": 0.6182407727733333,
+      "stddev": 0.020354725677852917,
+      "median": 0.62908114744,
+      "user": 0.5679894866666667,
+      "system": 0.044821339999999994,
+      "min": 0.59476014344,
+      "max": 0.6308810274400001,
+      "times": [
+        0.59476014344,
+        0.6308810274400001,
+        0.62908114744
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence2.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 10 -a 0.01); \\\n    ./generator -k 10 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_10_a_0.01.txt\"",
+      "mean": 1.1413669587733335,
+      "stddev": 0.020639594041558105,
+      "median": 1.13249371144,
+      "user": 1.0152394866666665,
+      "system": 0.12135567333333332,
+      "min": 1.1266478534400002,
+      "max": 1.16495931144,
+      "times": [
+        1.13249371144,
+        1.16495931144,
+        1.1266478534400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence2.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 15 -a 0.01); \\\n    ./generator -k 15 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_15_a_0.01.txt\"",
+      "mean": 1.2192286977733333,
+      "stddev": 0.01137538659197614,
+      "median": 1.22052793244,
+      "user": 1.0894934866666666,
+      "system": 0.12935500666666666,
+      "min": 1.20725947744,
+      "max": 1.22989868344,
+      "times": [
+        1.20725947744,
+        1.22989868344,
+        1.22052793244
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence2.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 20 -a 0.01); \\\n    ./generator -k 20 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_20_a_0.01.txt\"",
+      "mean": 1.3461533154399998,
+      "stddev": 0.04510751607305085,
+      "median": 1.35697231844,
+      "user": 1.1756908199999998,
+      "system": 0.15113700666666666,
+      "min": 1.29662012544,
+      "max": 1.3848675024400001,
+      "times": [
+        1.29662012544,
+        1.3848675024400001,
+        1.35697231844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence2.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 3 -a 0.05); \\\n    ./generator -k 3 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_3_a_0.05.txt\"",
+      "mean": 0.3317382741066667,
+      "stddev": 0.008731228362478336,
+      "median": 0.32693605444,
+      "user": 0.31069282,
+      "system": 0.020980006666666672,
+      "min": 0.32646225144,
+      "max": 0.34181651644,
+      "times": [
+        0.32693605444,
+        0.32646225144,
+        0.34181651644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence2.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 5 -a 0.05); \\\n    ./generator -k 5 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_5_a_0.05.txt\"",
+      "mean": 0.63992950744,
+      "stddev": 0.017981088414450952,
+      "median": 0.63967537844,
+      "user": 0.5943231533333334,
+      "system": 0.04596500666666666,
+      "min": 0.6220768304400001,
+      "max": 0.65803631344,
+      "times": [
+        0.6220768304400001,
+        0.63967537844,
+        0.65803631344
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence2.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 10 -a 0.05); \\\n    ./generator -k 10 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_10_a_0.05.txt\"",
+      "mean": 1.1684884637733335,
+      "stddev": 0.018244668738781264,
+      "median": 1.17127625044,
+      "user": 1.0358098199999999,
+      "system": 0.12885400666666666,
+      "min": 1.1490103474400002,
+      "max": 1.1851787934400002,
+      "times": [
+        1.17127625044,
+        1.1851787934400002,
+        1.1490103474400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence2.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 15 -a 0.05); \\\n    ./generator -k 15 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_15_a_0.05.txt\"",
+      "mean": 1.2236198321066667,
+      "stddev": 0.032680548714819485,
+      "median": 1.2243768884400001,
+      "user": 1.0843851533333333,
+      "system": 0.13943500666666667,
+      "min": 1.1905673324400001,
+      "max": 1.25591527544,
+      "times": [
+        1.1905673324400001,
+        1.25591527544,
+        1.2243768884400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence2.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 20 -a 0.05); \\\n    ./generator -k 20 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_20_a_0.05.txt\"",
+      "mean": 1.3108428691066667,
+      "stddev": 0.024884611897457987,
+      "median": 1.29659756644,
+      "user": 1.1559028199999999,
+      "system": 0.15011200666666666,
+      "min": 1.2963542404400001,
+      "max": 1.3395768004400002,
+      "times": [
+        1.3395768004400002,
+        1.29659756644,
+        1.2963542404400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence2.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 3 -a 0.1); \\\n    ./generator -k 3 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_3_a_0.1.txt\"",
+      "mean": 0.3237638851066667,
+      "stddev": 0.004492514565955393,
+      "median": 0.32369248444000004,
+      "user": 0.30669482,
+      "system": 0.017248673333333336,
+      "min": 0.31930749644,
+      "max": 0.32829167444,
+      "times": [
+        0.32369248444000004,
+        0.32829167444,
+        0.31930749644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence2.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 5 -a 0.1); \\\n    ./generator -k 5 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_5_a_0.1.txt\"",
+      "mean": 0.6259578437733334,
+      "stddev": 0.008855663948235922,
+      "median": 0.6218384624400001,
+      "user": 0.5791774866666667,
+      "system": 0.04681967333333333,
+      "min": 0.6199122394400001,
+      "max": 0.63612282944,
+      "times": [
+        0.63612282944,
+        0.6218384624400001,
+        0.6199122394400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence2.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 10 -a 0.1); \\\n    ./generator -k 10 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_10_a_0.1.txt\"",
+      "mean": 1.16658528744,
+      "stddev": 0.015451371201418004,
+      "median": 1.17547273544,
+      "user": 1.0244648199999997,
+      "system": 0.13414067333333332,
+      "min": 1.14874362244,
+      "max": 1.17553950444,
+      "times": [
+        1.14874362244,
+        1.17547273544,
+        1.17553950444
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence2.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 15 -a 0.1); \\\n    ./generator -k 15 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_15_a_0.1.txt\"",
+      "mean": 1.2585946207733334,
+      "stddev": 0.021193470071290684,
+      "median": 1.2563177704400001,
+      "user": 1.1075138199999999,
+      "system": 0.14103567333333333,
+      "min": 1.23863150244,
+      "max": 1.2808345894400002,
+      "times": [
+        1.23863150244,
+        1.2808345894400002,
+        1.2563177704400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence2.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 20 -a 0.1); \\\n    ./generator -k 20 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_20_a_0.1.txt\"",
+      "mean": 1.3137724801066666,
+      "stddev": 0.02144878275765156,
+      "median": 1.32455840144,
+      "user": 1.15396182,
+      "system": 0.14794534,
+      "min": 1.28907153644,
+      "max": 1.3276875024400001,
+      "times": [
+        1.3276875024400001,
+        1.32455840144,
+        1.28907153644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence2.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 3 -a 0.2); \\\n    ./generator -k 3 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_3_a_0.2.txt\"",
+      "mean": 0.35045095344000005,
+      "stddev": 0.02648464620946175,
+      "median": 0.34169310744000003,
+      "user": 0.33121448666666664,
+      "system": 0.019199006666666667,
+      "min": 0.32945446344,
+      "max": 0.38020528944000004,
+      "times": [
+        0.34169310744000003,
+        0.38020528944000004,
+        0.32945446344
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence2.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 5 -a 0.2); \\\n    ./generator -k 5 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_5_a_0.2.txt\"",
+      "mean": 0.6280493817733334,
+      "stddev": 0.01613610113241191,
+      "median": 0.63251685244,
+      "user": 0.58575182,
+      "system": 0.042311673333333334,
+      "min": 0.6101502374400001,
+      "max": 0.64148105544,
+      "times": [
+        0.64148105544,
+        0.6101502374400001,
+        0.63251685244
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence2.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 10 -a 0.2); \\\n    ./generator -k 10 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_10_a_0.2.txt\"",
+      "mean": 1.16208964844,
+      "stddev": 0.018935864633693206,
+      "median": 1.16129983644,
+      "user": 1.0348674866666665,
+      "system": 0.12516600666666666,
+      "min": 1.1435610474400002,
+      "max": 1.18140806144,
+      "times": [
+        1.16129983644,
+        1.18140806144,
+        1.1435610474400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence2.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 15 -a 0.2); \\\n    ./generator -k 15 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_15_a_0.2.txt\"",
+      "mean": 1.2522558694400001,
+      "stddev": 0.014302873552035187,
+      "median": 1.25688998144,
+      "user": 1.1128554866666664,
+      "system": 0.13692433999999998,
+      "min": 1.23621052344,
+      "max": 1.26366710344,
+      "times": [
+        1.26366710344,
+        1.23621052344,
+        1.25688998144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence2.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 20 -a 0.2); \\\n    ./generator -k 20 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_20_a_0.2.txt\"",
+      "mean": 1.3218329141066667,
+      "stddev": 0.012752435978265374,
+      "median": 1.3162974304400001,
+      "user": 1.1586621533333332,
+      "system": 0.15205167333333333,
+      "min": 1.3127835734400002,
+      "max": 1.3364177384400002,
+      "times": [
+        1.3364177384400002,
+        1.3162974304400001,
+        1.3127835734400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence2.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 3 -a 0.5); \\\n    ./generator -k 3 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_3_a_0.5.txt\"",
+      "mean": 0.3536351127733333,
+      "stddev": 0.028340548754835625,
+      "median": 0.34898377344000003,
+      "user": 0.3346441533333333,
+      "system": 0.01931834,
+      "min": 0.32790796644000003,
+      "max": 0.38401359844,
+      "times": [
+        0.38401359844,
+        0.32790796644000003,
+        0.34898377344000003
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence2.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 5 -a 0.5); \\\n    ./generator -k 5 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_5_a_0.5.txt\"",
+      "mean": 0.6419038521066667,
+      "stddev": 0.02764403910879551,
+      "median": 0.64123053444,
+      "user": 0.59647182,
+      "system": 0.04578300666666666,
+      "min": 0.6146026224400001,
+      "max": 0.66987839944,
+      "times": [
+        0.6146026224400001,
+        0.64123053444,
+        0.66987839944
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence2.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 10 -a 0.5); \\\n    ./generator -k 10 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_10_a_0.5.txt\"",
+      "mean": 1.1748635111066668,
+      "stddev": 0.010910128390504197,
+      "median": 1.1745984634400002,
+      "user": 1.0455141533333332,
+      "system": 0.12552600666666666,
+      "min": 1.1640883214400002,
+      "max": 1.1859037484400001,
+      "times": [
+        1.1859037484400001,
+        1.1640883214400002,
+        1.1745984634400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence2.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 15 -a 0.5); \\\n    ./generator -k 15 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_15_a_0.5.txt\"",
+      "mean": 1.2489696724400001,
+      "stddev": 0.03868775942735688,
+      "median": 1.2354445744400002,
+      "user": 1.0948944866666666,
+      "system": 0.14148867333333334,
+      "min": 1.2188601924400002,
+      "max": 1.2926042504400002,
+      "times": [
+        1.2926042504400002,
+        1.2188601924400002,
+        1.2354445744400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence2.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence2.txt); \\\n    output1=\\$(./fcm sequences/sequence2.txt -k 20 -a 0.5); \\\n    ./generator -k 20 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence2.txt_k_20_a_0.5.txt\"",
+      "mean": 1.3135319237733334,
+      "stddev": 0.01201128695740944,
+      "median": 1.31278937044,
+      "user": 1.1436521533333333,
+      "system": 0.15796667333333334,
+      "min": 1.30190914044,
+      "max": 1.3258972604400001,
+      "times": [
+        1.3258972604400001,
+        1.30190914044,
+        1.31278937044
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence2.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 3 -a 0.01); \\\n    ./generator -k 3 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_3_a_0.01.txt\"",
+      "mean": 5.126327524773333,
+      "stddev": 0.20163660391329186,
+      "median": 5.03882556344,
+      "user": 5.09067682,
+      "system": 0.03438134,
+      "min": 4.98322328044,
+      "max": 5.35693373044,
+      "times": [
+        5.03882556344,
+        5.35693373044,
+        4.98322328044
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence3.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 5 -a 0.01); \\\n    ./generator -k 5 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_5_a_0.01.txt\"",
+      "mean": 10.136765954773333,
+      "stddev": 0.05841462796909156,
+      "median": 10.15704575544,
+      "user": 9.50198582,
+      "system": 0.59944934,
+      "min": 10.07091415244,
+      "max": 10.18233795644,
+      "times": [
+        10.15704575544,
+        10.07091415244,
+        10.18233795644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence3.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 10 -a 0.01); \\\n    ./generator -k 10 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_10_a_0.01.txt\"",
+      "mean": 13.788257367106667,
+      "stddev": 0.11567781434027297,
+      "median": 13.73833734944,
+      "user": 12.482598819999998,
+      "system": 1.2361303399999999,
+      "min": 13.70592175344,
+      "max": 13.92051299844,
+      "times": [
+        13.70592175344,
+        13.73833734944,
+        13.92051299844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence3.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 15 -a 0.01); \\\n    ./generator -k 15 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_15_a_0.01.txt\"",
+      "mean": 14.087772685773333,
+      "stddev": 0.4508164229490002,
+      "median": 13.92300424644,
+      "user": 12.690617153333333,
+      "system": 1.3091110066666667,
+      "min": 13.74251924544,
+      "max": 14.59779456544,
+      "times": [
+        14.59779456544,
+        13.74251924544,
+        13.92300424644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence3.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 20 -a 0.01); \\\n    ./generator -k 20 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_20_a_0.01.txt\"",
+      "mean": 14.814636033773333,
+      "stddev": 0.1443900954628762,
+      "median": 14.87302645644,
+      "user": 13.23835982,
+      "system": 1.4782450066666666,
+      "min": 14.650195051439999,
+      "max": 14.92068659344,
+      "times": [
+        14.650195051439999,
+        14.92068659344,
+        14.87302645644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence3.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 3 -a 0.05); \\\n    ./generator -k 3 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_3_a_0.05.txt\"",
+      "mean": 5.533061991773333,
+      "stddev": 0.09392451051447641,
+      "median": 5.480846639439999,
+      "user": 5.496128153333333,
+      "system": 0.03660667333333333,
+      "min": 5.47684724444,
+      "max": 5.64149209144,
+      "times": [
+        5.47684724444,
+        5.480846639439999,
+        5.64149209144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence3.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 5 -a 0.05); \\\n    ./generator -k 5 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_5_a_0.05.txt\"",
+      "mean": 10.66573075744,
+      "stddev": 0.14031804131360262,
+      "median": 10.60774539344,
+      "user": 10.024989486666666,
+      "system": 0.5986346733333333,
+      "min": 10.56369891544,
+      "max": 10.82574796344,
+      "times": [
+        10.82574796344,
+        10.60774539344,
+        10.56369891544
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence3.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 10 -a 0.05); \\\n    ./generator -k 10 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_10_a_0.05.txt\"",
+      "mean": 13.924427559106666,
+      "stddev": 0.19831769107435054,
+      "median": 13.827557989439999,
+      "user": 12.598663153333332,
+      "system": 1.2600606733333333,
+      "min": 13.79316225644,
+      "max": 14.15256243144,
+      "times": [
+        13.827557989439999,
+        13.79316225644,
+        14.15256243144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence3.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 15 -a 0.05); \\\n    ./generator -k 15 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_15_a_0.05.txt\"",
+      "mean": 14.05456949244,
+      "stddev": 0.029524232038568955,
+      "median": 14.056756202439999,
+      "user": 12.66007482,
+      "system": 1.3210323400000001,
+      "min": 14.02401270244,
+      "max": 14.082939572439999,
+      "times": [
+        14.082939572439999,
+        14.02401270244,
+        14.056756202439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence3.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 20 -a 0.05); \\\n    ./generator -k 20 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_20_a_0.05.txt\"",
+      "mean": 14.772204425773333,
+      "stddev": 0.2000573644471861,
+      "median": 14.86411737644,
+      "user": 13.273690486666666,
+      "system": 1.3879306733333332,
+      "min": 14.54270788344,
+      "max": 14.90978801744,
+      "times": [
+        14.86411737644,
+        14.90978801744,
+        14.54270788344
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence3.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 3 -a 0.1); \\\n    ./generator -k 3 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_3_a_0.1.txt\"",
+      "mean": 5.344324084439999,
+      "stddev": 0.08278976648677426,
+      "median": 5.35096538944,
+      "user": 5.307179486666666,
+      "system": 0.03473000666666667,
+      "min": 5.2584136914399995,
+      "max": 5.4235931724399995,
+      "times": [
+        5.4235931724399995,
+        5.35096538944,
+        5.2584136914399995
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence3.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 5 -a 0.1); \\\n    ./generator -k 5 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_5_a_0.1.txt\"",
+      "mean": 12.659130081106667,
+      "stddev": 2.3178860753773254,
+      "median": 12.88437752544,
+      "user": 9.753066153333334,
+      "system": 0.6075556733333333,
+      "min": 10.23684327744,
+      "max": 14.85616944044,
+      "times": [
+        14.85616944044,
+        12.88437752544,
+        10.23684327744
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence3.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 10 -a 0.1); \\\n    ./generator -k 10 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_10_a_0.1.txt\"",
+      "mean": 13.804291070773331,
+      "stddev": 0.10667538940511695,
+      "median": 13.752935279439999,
+      "user": 12.481915819999998,
+      "system": 1.2520510066666664,
+      "min": 13.73300724344,
+      "max": 13.926930689439999,
+      "times": [
+        13.926930689439999,
+        13.73300724344,
+        13.752935279439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence3.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 15 -a 0.1); \\\n    ./generator -k 15 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_15_a_0.1.txt\"",
+      "mean": 13.87163058944,
+      "stddev": 0.10123490818396806,
+      "median": 13.84504432644,
+      "user": 12.51204682,
+      "system": 1.2789553399999998,
+      "min": 13.78634185344,
+      "max": 13.98350558844,
+      "times": [
+        13.98350558844,
+        13.78634185344,
+        13.84504432644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence3.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 20 -a 0.1); \\\n    ./generator -k 20 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_20_a_0.1.txt\"",
+      "mean": 14.549575884773333,
+      "stddev": 0.010439683592585304,
+      "median": 14.54418099144,
+      "user": 13.055338153333333,
+      "system": 1.4046800066666665,
+      "min": 14.54293746844,
+      "max": 14.561609194439999,
+      "times": [
+        14.561609194439999,
+        14.54418099144,
+        14.54293746844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence3.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 3 -a 0.2); \\\n    ./generator -k 3 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_3_a_0.2.txt\"",
+      "mean": 5.2094772307733335,
+      "stddev": 0.08658073341411636,
+      "median": 5.201570331439999,
+      "user": 5.168986486666667,
+      "system": 0.03963500666666667,
+      "min": 5.127121155439999,
+      "max": 5.29974020544,
+      "times": [
+        5.29974020544,
+        5.127121155439999,
+        5.201570331439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence3.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 5 -a 0.2); \\\n    ./generator -k 5 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_5_a_0.2.txt\"",
+      "mean": 10.312488495106667,
+      "stddev": 0.05320338162678995,
+      "median": 10.30337664744,
+      "user": 9.666539153333334,
+      "system": 0.6134916733333334,
+      "min": 10.26442949244,
+      "max": 10.36965934544,
+      "times": [
+        10.36965934544,
+        10.26442949244,
+        10.30337664744
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence3.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 10 -a 0.2); \\\n    ./generator -k 10 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_10_a_0.2.txt\"",
+      "mean": 13.672237527106667,
+      "stddev": 0.036725755596029794,
+      "median": 13.67540045444,
+      "user": 12.383840486666665,
+      "system": 1.2282286733333334,
+      "min": 13.63403260044,
+      "max": 13.707279526439999,
+      "times": [
+        13.707279526439999,
+        13.67540045444,
+        13.63403260044
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence3.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 15 -a 0.2); \\\n    ./generator -k 15 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_15_a_0.2.txt\"",
+      "mean": 13.857720350773333,
+      "stddev": 0.09881653132111491,
+      "median": 13.83594806244,
+      "user": 12.506527153333332,
+      "system": 1.2700200066666667,
+      "min": 13.771605554439999,
+      "max": 13.965607435439999,
+      "times": [
+        13.771605554439999,
+        13.83594806244,
+        13.965607435439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence3.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 20 -a 0.2); \\\n    ./generator -k 20 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_20_a_0.2.txt\"",
+      "mean": 15.046131674773333,
+      "stddev": 0.2220674034152185,
+      "median": 15.012633168439999,
+      "user": 13.494291486666663,
+      "system": 1.47726634,
+      "min": 14.84271662744,
+      "max": 15.283045228439999,
+      "times": [
+        14.84271662744,
+        15.283045228439999,
+        15.012633168439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence3.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 3 -a 0.5); \\\n    ./generator -k 3 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_3_a_0.5.txt\"",
+      "mean": 5.2690743504399995,
+      "stddev": 0.04563951359524217,
+      "median": 5.268882287439999,
+      "user": 5.230494153333333,
+      "system": 0.038760673333333336,
+      "min": 5.2235311714399995,
+      "max": 5.31480959244,
+      "times": [
+        5.31480959244,
+        5.268882287439999,
+        5.2235311714399995
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence3.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 5 -a 0.5); \\\n    ./generator -k 5 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_5_a_0.5.txt\"",
+      "mean": 10.28023459144,
+      "stddev": 0.0990354847224708,
+      "median": 10.23470852444,
+      "user": 9.629529486666664,
+      "system": 0.6184006733333334,
+      "min": 10.21214851844,
+      "max": 10.39384673144,
+      "times": [
+        10.21214851844,
+        10.39384673144,
+        10.23470852444
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence3.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 10 -a 0.5); \\\n    ./generator -k 10 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_10_a_0.5.txt\"",
+      "mean": 13.811240210773333,
+      "stddev": 0.08141331997979968,
+      "median": 13.82053017744,
+      "user": 12.493371486666666,
+      "system": 1.2510200066666666,
+      "min": 13.725580407439999,
+      "max": 13.887610047439999,
+      "times": [
+        13.82053017744,
+        13.725580407439999,
+        13.887610047439999
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence3.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 15 -a 0.5); \\\n    ./generator -k 15 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_15_a_0.5.txt\"",
+      "mean": 13.945465949439999,
+      "stddev": 0.02992741992722138,
+      "median": 13.93953651444,
+      "user": 12.603821819999999,
+      "system": 1.2656456733333332,
+      "min": 13.918947081439999,
+      "max": 13.97791425244,
+      "times": [
+        13.93953651444,
+        13.918947081439999,
+        13.97791425244
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence3.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence3.txt); \\\n    output1=\\$(./fcm sequences/sequence3.txt -k 20 -a 0.5); \\\n    ./generator -k 20 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence3.txt_k_20_a_0.5.txt\"",
+      "mean": 14.66325455644,
+      "stddev": 0.0566164771975156,
+      "median": 14.64250586244,
+      "user": 13.113394819999998,
+      "system": 1.46622534,
+      "min": 14.61993957244,
+      "max": 14.72731823444,
+      "times": [
+        14.64250586244,
+        14.61993957244,
+        14.72731823444
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence3.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 3 -a 0.01); \\\n    ./generator -k 3 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_3_a_0.01.txt\"",
+      "mean": 0.52620781344,
+      "stddev": 0.005588103339270088,
+      "median": 0.52507715244,
+      "user": 0.40419182000000003,
+      "system": 0.021793673333333336,
+      "min": 0.52127149844,
+      "max": 0.5322747894400001,
+      "times": [
+        0.5322747894400001,
+        0.52507715244,
+        0.52127149844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence5.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 5 -a 0.01); \\\n    ./generator -k 5 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_5_a_0.01.txt\"",
+      "mean": 0.5313992824400001,
+      "stddev": 0.01897698115087278,
+      "median": 0.52199456644,
+      "user": 0.4949501533333333,
+      "system": 0.036761673333333335,
+      "min": 0.51896135744,
+      "max": 0.55324192344,
+      "times": [
+        0.51896135744,
+        0.55324192344,
+        0.52199456644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence5.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 10 -a 0.01); \\\n    ./generator -k 10 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_10_a_0.01.txt\"",
+      "mean": 0.7363187814400001,
+      "stddev": 0.011079462884871558,
+      "median": 0.7367511924400001,
+      "user": 0.6673804866666667,
+      "system": 0.06926233999999999,
+      "min": 0.7250294434400001,
+      "max": 0.74717570844,
+      "times": [
+        0.74717570844,
+        0.7367511924400001,
+        0.7250294434400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence5.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 15 -a 0.01); \\\n    ./generator -k 15 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_15_a_0.01.txt\"",
+      "mean": 6.537336915440001,
+      "stddev": 9.690336729830422,
+      "median": 0.97287437444,
+      "user": 6.442067486666666,
+      "system": 0.09540567333333333,
+      "min": 0.91241686044,
+      "max": 17.726719511440002,
+      "times": [
+        0.97287437444,
+        17.726719511440002,
+        0.91241686044
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence5.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 20 -a 0.01); \\\n    ./generator -k 20 -a 0.01 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.01); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_20_a_0.01.txt\"",
+      "mean": 31.589269948106665,
+      "stddev": 52.099219922933024,
+      "median": 1.5265193374400001,
+      "user": 31.198684486666664,
+      "system": 0.12390467333333333,
+      "min": 1.4930263724400001,
+      "max": 91.74826413443999,
+      "times": [
+        91.74826413443999,
+        1.5265193374400001,
+        1.4930263724400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.01",
+        "input_file": "sequence5.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 3 -a 0.05); \\\n    ./generator -k 3 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_3_a_0.05.txt\"",
+      "mean": 0.5146314281066667,
+      "stddev": 0.01912103577194947,
+      "median": 0.51268653344,
+      "user": 0.39806748666666664,
+      "system": 0.020716006666666665,
+      "min": 0.49655716844000003,
+      "max": 0.5346505824400001,
+      "times": [
+        0.51268653344,
+        0.49655716844000003,
+        0.5346505824400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence5.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 5 -a 0.05); \\\n    ./generator -k 5 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_5_a_0.05.txt\"",
+      "mean": 0.49839501944000003,
+      "stddev": 0.017347749843558948,
+      "median": 0.49032550644,
+      "user": 0.45701082,
+      "system": 0.04171334000000001,
+      "min": 0.48655190944000004,
+      "max": 0.51830764244,
+      "times": [
+        0.49032550644,
+        0.51830764244,
+        0.48655190944000004
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence5.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 10 -a 0.05); \\\n    ./generator -k 10 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_10_a_0.05.txt\"",
+      "mean": 0.7114493331066667,
+      "stddev": 0.010655751942310372,
+      "median": 0.71441265444,
+      "user": 0.6425984866666666,
+      "system": 0.06928767333333331,
+      "min": 0.69962556944,
+      "max": 0.7203097754400001,
+      "times": [
+        0.7203097754400001,
+        0.69962556944,
+        0.71441265444
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence5.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 15 -a 0.05); \\\n    ./generator -k 15 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_15_a_0.05.txt\"",
+      "mean": 0.92564515644,
+      "stddev": 0.03220740098390005,
+      "median": 0.91551285644,
+      "user": 0.8308134866666667,
+      "system": 0.09509933999999999,
+      "min": 0.89972229144,
+      "max": 0.9617003214400001,
+      "times": [
+        0.9617003214400001,
+        0.91551285644,
+        0.89972229144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence5.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 20 -a 0.05); \\\n    ./generator -k 20 -a 0.05 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.05); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_20_a_0.05.txt\"",
+      "mean": 1.0813908221066668,
+      "stddev": 0.013447876451740034,
+      "median": 1.07795427944,
+      "user": 0.9556061533333334,
+      "system": 0.12396667333333333,
+      "min": 1.06999467344,
+      "max": 1.09622351344,
+      "times": [
+        1.09622351344,
+        1.06999467344,
+        1.07795427944
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.05",
+        "input_file": "sequence5.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 3 -a 0.1); \\\n    ./generator -k 3 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_3_a_0.1.txt\"",
+      "mean": 0.5150596484400001,
+      "stddev": 0.027147185453961376,
+      "median": 0.50114727944,
+      "user": 0.4040881533333333,
+      "system": 0.018445673333333332,
+      "min": 0.49768880744000005,
+      "max": 0.5463428584400001,
+      "times": [
+        0.49768880744000005,
+        0.5463428584400001,
+        0.50114727944
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence5.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 5 -a 0.1); \\\n    ./generator -k 5 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_5_a_0.1.txt\"",
+      "mean": 0.5300268307733333,
+      "stddev": 0.017190570581383388,
+      "median": 0.52181758844,
+      "user": 0.50069682,
+      "system": 0.029704339999999996,
+      "min": 0.5184798714400001,
+      "max": 0.54978303244,
+      "times": [
+        0.54978303244,
+        0.5184798714400001,
+        0.52181758844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence5.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 10 -a 0.1); \\\n    ./generator -k 10 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_10_a_0.1.txt\"",
+      "mean": 0.7997300251066667,
+      "stddev": 0.1520082778441635,
+      "median": 0.71409382844,
+      "user": 0.6520751533333334,
+      "system": 0.06551067333333332,
+      "min": 0.70985920944,
+      "max": 0.97523703744,
+      "times": [
+        0.70985920944,
+        0.71409382844,
+        0.97523703744
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence5.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 15 -a 0.1); \\\n    ./generator -k 15 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_15_a_0.1.txt\"",
+      "mean": 1.284043295106667,
+      "stddev": 0.23283526407066946,
+      "median": 1.1632267664400002,
+      "user": 0.8641584866666667,
+      "system": 0.09631567333333331,
+      "min": 1.1364496724400002,
+      "max": 1.5524534464400002,
+      "times": [
+        1.1632267664400002,
+        1.1364496724400002,
+        1.5524534464400002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence5.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 20 -a 0.1); \\\n    ./generator -k 20 -a 0.1 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.1); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_20_a_0.1.txt\"",
+      "mean": 1.6344152224400001,
+      "stddev": 0.1917523735201497,
+      "median": 1.55167373944,
+      "user": 1.0013064866666666,
+      "system": 0.12813900666666664,
+      "min": 1.49792546244,
+      "max": 1.8536464654400002,
+      "times": [
+        1.55167373944,
+        1.8536464654400002,
+        1.49792546244
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.1",
+        "input_file": "sequence5.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 3 -a 0.2); \\\n    ./generator -k 3 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_3_a_0.2.txt\"",
+      "mean": 0.51518226644,
+      "stddev": 0.007911894249574452,
+      "median": 0.51591138644,
+      "user": 0.40218482,
+      "system": 0.02112900666666667,
+      "min": 0.50693104944,
+      "max": 0.52270436344,
+      "times": [
+        0.52270436344,
+        0.50693104944,
+        0.51591138644
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence5.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 5 -a 0.2); \\\n    ./generator -k 5 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_5_a_0.2.txt\"",
+      "mean": 0.49403803844000005,
+      "stddev": 0.009307765010985472,
+      "median": 0.49231877844000005,
+      "user": 0.45923082,
+      "system": 0.035141673333333324,
+      "min": 0.48570976344,
+      "max": 0.50408557344,
+      "times": [
+        0.50408557344,
+        0.48570976344,
+        0.49231877844000005
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence5.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 10 -a 0.2); \\\n    ./generator -k 10 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_10_a_0.2.txt\"",
+      "mean": 0.8782124907733334,
+      "stddev": 0.1629481083946427,
+      "median": 0.92829451744,
+      "user": 0.6302024866666668,
+      "system": 0.06924567333333331,
+      "min": 0.69610165544,
+      "max": 1.01024129944,
+      "times": [
+        1.01024129944,
+        0.92829451744,
+        0.69610165544
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence5.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 15 -a 0.2); \\\n    ./generator -k 15 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_15_a_0.2.txt\"",
+      "mean": 6.381652456440001,
+      "stddev": 9.467653303179388,
+      "median": 0.93135817744,
+      "user": 6.28636782,
+      "system": 0.09423500666666666,
+      "min": 0.89965768944,
+      "max": 17.313941502440002,
+      "times": [
+        0.93135817744,
+        0.89965768944,
+        17.313941502440002
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence5.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 20 -a 0.2); \\\n    ./generator -k 20 -a 0.2 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.2); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_20_a_0.2.txt\"",
+      "mean": 1.1083492481066666,
+      "stddev": 0.012197400596527326,
+      "median": 1.10809276744,
+      "user": 0.97593182,
+      "system": 0.12584534,
+      "min": 1.09628211044,
+      "max": 1.12067286644,
+      "times": [
+        1.12067286644,
+        1.10809276744,
+        1.09628211044
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.2",
+        "input_file": "sequence5.txt",
+        "k": "20"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 3 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 3 -a 0.5); \\\n    ./generator -k 3 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 3 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_3_a_0.5.txt\"",
+      "mean": 0.5100768427733334,
+      "stddev": 0.012714641704993328,
+      "median": 0.50562012844,
+      "user": 0.40180782,
+      "system": 0.018878340000000004,
+      "min": 0.50019052344,
+      "max": 0.52441987644,
+      "times": [
+        0.50562012844,
+        0.52441987644,
+        0.50019052344
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence5.txt",
+        "k": "3"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 5 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 5 -a 0.5); \\\n    ./generator -k 5 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 5 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_5_a_0.5.txt\"",
+      "mean": 0.4868432411066667,
+      "stddev": 0.005326389409904454,
+      "median": 0.48621401744000003,
+      "user": 0.45076548666666666,
+      "system": 0.03642300666666667,
+      "min": 0.48185941144,
+      "max": 0.49245629444,
+      "times": [
+        0.49245629444,
+        0.48621401744000003,
+        0.48185941144
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence5.txt",
+        "k": "5"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 10 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 10 -a 0.5); \\\n    ./generator -k 10 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 10 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_10_a_0.5.txt\"",
+      "mean": 0.6847134687733334,
+      "stddev": 0.01119661076310294,
+      "median": 0.68479860544,
+      "user": 0.6240011533333334,
+      "system": 0.06093067333333333,
+      "min": 0.67347453244,
+      "max": 0.69586726844,
+      "times": [
+        0.68479860544,
+        0.67347453244,
+        0.69586726844
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence5.txt",
+        "k": "10"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 15 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 15 -a 0.5); \\\n    ./generator -k 15 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 15 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_15_a_0.5.txt\"",
+      "mean": 0.90320558144,
+      "stddev": 0.01761642377813421,
+      "median": 0.90341180044,
+      "user": 0.80466782,
+      "system": 0.09407367333333332,
+      "min": 0.8854869534400001,
+      "max": 0.92071799044,
+      "times": [
+        0.92071799044,
+        0.90341180044,
+        0.8854869534400001
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence5.txt",
+        "k": "15"
+      }
+    },
+    {
+      "command": "bash -c \"p=\\$(head -c 20 sequences/sequence5.txt); \\\n    output1=\\$(./fcm sequences/sequence5.txt -k 20 -a 0.5); \\\n    ./generator -k 20 -a 0.5 -p \\\"\\$p\\\" -s 500 > outputs/temp.txt; \\\n    output2=\\$(./fcm outputs/temp.txt -k 20 -a 0.5); \\\n    printf \\\"%s,%s\\n\\\" \\\"\\$output1\\\" \\\"\\$output2\\\" >> outputs/i_sequence5.txt_k_20_a_0.5.txt\"",
+      "mean": 1.0808391691066668,
+      "stddev": 0.014314582766726388,
+      "median": 1.07472188344,
+      "user": 0.9606781533333333,
+      "system": 0.12054900666666667,
+      "min": 1.0705996394400001,
+      "max": 1.09719598444,
+      "times": [
+        1.0705996394400001,
+        1.09719598444,
+        1.07472188344
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ],
+      "parameters": {
+        "a": "0.5",
+        "input_file": "sequence5.txt",
+        "k": "20"
       }
     }
   ]

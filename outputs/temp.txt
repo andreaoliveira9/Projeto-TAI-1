@@ -7,27 +7,26 @@
 int CArrayTests()
 {
     printf("\n");
+    printf("\nSorted array: ");
     for (i = 0; i <= counter; i++)
             {
-            i++;
-        } while (arr[j] > pivot);
-
-        
-        if (digit_count == MAX_DIGITS)
-        {
-                result = 1;
-                printAVL(root, 1);
-
-            break;
-    case 0x1B:          exit(EXIT_SUCCESS);
+                             weight += 1;
     }
+    return right + 1;
 }
-#endif
 
-
-int main(int argc, const char *argv[])
+int getSmall(int *a, int j, int left, int pivot)
 {
-    double X0 = 0.f;          
-    double X_MAX = 10.F;      
-    double Y0[] = {1.f, 0.f}; 
-    double step_size
+    for (int k = j; k >= left; k--)
+    {
+        if (i < len)
+            {
+            out_int[L - i - 1] = buffer[i] - 0x30;
+        }
+    }
+
+    modifiedBinarySearch(mat, n, m, x);
+
+    for (int i = 3; i <= squareRoot; i += 2)
+    {
+        if (is_
