@@ -3,6 +3,12 @@ import itertools
 import sys
 import matplotlib.pyplot as plt
 import os
+import pandas as pd
+import seaborn as sns
+
+
+# Apply Seaborn theme
+sns.set_theme(style="whitegrid")
 
 # Verifica se o nome do ficheiro foi passado como argumento
 if len(sys.argv) < 2:
@@ -24,18 +30,15 @@ except ValueError:
     print("Invalid k or alpha value. Please provide numeric values.")
     sys.exit(1)
 
-# Set default values if not provided
-if selected_k is None:
-    selected_k = 7  # Default k value
-if selected_alpha is None:
-    selected_alpha = 0.01  # Default alpha value
+# Define parameter ranges only if k and alpha were not provided
+if selected_k is not None and selected_alpha is not None:
+    k_values = [selected_k]
+    alpha_values = [selected_alpha]
+else:
+    k_values = range(1, 11)
+    alpha_values = [0.01, 0.05, 0.1, 0.2, 0.5]
 
 print(f"Running analysis with k={selected_k}, alpha={selected_alpha}")
-
-# Configuração do intervalo de parâmetros
-k_values = range(1, 11)  # Testar valores de k de 3 a 9
-alpha_values = [0.01, 0.05, 0.1, 0.2, 0.5]  # Novos valores de alpha
-
 
 fcm_executable = "./fcm.exe" if os.name == "nt" else "./fcm"
 
@@ -46,58 +49,81 @@ data = {}
 
 colors = itertools.cycle(["b", "g", "r", "c", "m", "y", "k"])
 
-# Testar todas as combinações de k e alpha
-for k, alpha in itertools.product(k_values, alpha_values):
-    print(f"Testando k={k}, alpha={alpha}...")
-    try:
-        # Executar o programa e capturar a saída
-        result = subprocess.run(
-            [fcm_executable, input_file, "-k", str(k), "-a", str(alpha)],
-            capture_output=True,
-            text=True,
+for k in k_values:
+    for alpha in alpha_values:
+        print(f"Testing k={k}, alpha={alpha}...")
+        try:
+            # Executar o programa e capturar a saída
+            result = subprocess.run(
+                [fcm_executable, input_file, "-k", str(k), "-a", str(alpha)],
+                capture_output=True,
+                text=True,
+            )
+
+            lengths, bps = [], []
+
+            # Extrair o valor de BPS da saída
+            output_lines = result.stdout.split("\n")
+            for line in output_lines:
+                parts = line.strip().split()  # Splitting by spaces/tabs
+                if len(parts) == 3:  # Expecting "<index> <log_probability> <symbol>"
+                    lengths.append(int(parts[0]))  # Store the sequence position (index)
+                    bps.append(float(parts[1]))  # Store -log(P(e|c)) (bits per symbol)
+
+            # Store data for this (k, alpha)
+            data[(k, alpha)] = (lengths, bps)
+
+        except Exception as e:
+            print(f"Erro ao testar k={k}, alpha={alpha}: {e}")
+
+
+# Plot results only if user provided values
+if selected_k is not None and selected_alpha is not None:
+
+    # Set rolling window size (adjust as needed)
+    rolling_window = 200
+    # Plot only for the selected (k, alpha) combination
+    plt.figure(figsize=(14, 7))
+
+    if (selected_k, selected_alpha) in data:
+
+        filtered_lengths, filtered_bps = data[(selected_k, selected_alpha)]
+
+        # Convert to DataFrame for easy processing
+        df = pd.DataFrame({'Position': filtered_lengths, 'Complexity': filtered_bps})
+        
+       # Apply rolling average for smoothing
+        df["Smoothed"] = df["Complexity"].rolling(window=rolling_window, min_periods=1).mean()
+
+       # **Scatter plot improvements**
+        sns.scatterplot(
+            x=df["Position"], 
+            y=df["Complexity"], 
+            alpha=0.1,  # **Lower transparency**
+            color="cyan",  
+            s=5,  # **Smaller point size**
+            label="Raw Data"
         )
 
-        lengths = []
-        bps = []
+        # **Smoothed trend line improvements**
+        sns.lineplot(
+            x=df["Position"], 
+            y=df["Smoothed"], 
+            color="darkblue",  
+            linewidth=2,  
+            label="Smoothed Trend"
+        )
+        
+    else:
+        print(f"No data found for k={selected_k}, alpha={selected_alpha}")
 
-        # Extrair o valor de BPS da saída
-        output_lines = result.stdout.split("\n")
-        for line in output_lines:
-            parts = line.strip().split()  # Splitting by spaces/tabs
-            if len(parts) == 3:  # Expecting "<index> <log_probability> <symbol>"
-                lengths.append(int(parts[0]))  # Store the sequence position (index)
-                bps.append(float(parts[1]))  # Store -log(P(e|c)) (bits per symbol)
+    # **Improve grid styling**
+    plt.grid(True, linestyle="--", alpha=0.5)
 
-        # Store data for this (k, alpha)
-        data[(k, alpha)] = (lengths, bps)
-
-        # Plotar os resultados para o valor atual de k
-        color = next(colors)
-        plt.scatter(lengths, bps, s=1, label=f"k={k}", color=color)
-
-
-    except Exception as e:
-        print(f"Erro ao testar k={k}, alpha={alpha}: {e}")
-
-
-
-# Show combined plot of all (k, alpha) values
-plt.xlabel("Sequence Position")
-plt.ylabel("-log(P(e|c)) (Bits per Symbol)")
-plt.title("Sequence Complexity Profile (All k, alpha combinations)")
-plt.legend()
-plt.show()
-
-# Plot only for the selected (k, alpha) combination
-plt.figure(figsize=(12, 6))
-
-if (selected_k, selected_alpha) in data:
-    filtered_lengths, filtered_bps = data[(selected_k, selected_alpha)]
-    plt.scatter(filtered_lengths, filtered_bps, s=1, color="blue", alpha=0.5)
-else:
-    print(f"No data found for k={selected_k}, alpha={selected_alpha}")
-
-plt.xlabel("Sequence Position")
-plt.ylabel("-log(P(e|c)) (Bits per Symbol)")
-plt.title(f"Sequence Complexity Profile (k={selected_k}, alpha={selected_alpha})")
-plt.show()
+    plt.xlabel("Sequence Position", fontsize=14)
+    plt.ylabel("-log(P(e|c)) (Bits per Symbol)", fontsize=14)
+    plt.title(f"Sequence Complexity Profile (k={selected_k}, alpha={selected_alpha})", fontsize=16)
+    
+    # **Improve legend positioning**
+    plt.legend(frameon=True, fontsize=12, loc="upper right")
+    plt.show()
