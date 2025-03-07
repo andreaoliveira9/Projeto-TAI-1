@@ -66,8 +66,13 @@ double calculateAverageInformation(const unordered_map<string, unordered_map<cha
             totalCount += count;
         }
         
-        double probability = (symbolCount + alpha) / (totalCount + alpha * alphabetSize);
-        totalInfo += -log2(probability);
+        double probability = (   + alpha) / (totalCount + alpha * alphabetSize);
+        double logProb = -log2(probability);
+
+        totalInfo += logProb;
+    
+        // Output per-symbol probability for plotting
+        cout << i << " " << logProb << " " << symbol << endl;
     }
     
     return totalInfo / countSymbols;
