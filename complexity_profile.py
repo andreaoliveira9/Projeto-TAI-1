@@ -81,7 +81,7 @@ for k in k_values:
 if selected_k is not None and selected_alpha is not None:
 
     # Set rolling window size (adjust as needed)
-    rolling_window = 200
+    rolling_window = 5
     # Plot only for the selected (k, alpha) combination
     plt.figure(figsize=(14, 7))
 
