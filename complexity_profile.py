@@ -99,9 +99,9 @@ if selected_k is not None and selected_alpha is not None:
         sns.scatterplot(
             x=df["Position"], 
             y=df["Complexity"], 
-            alpha=0.1,  # **Lower transparency**
+            alpha=0.5,  # **Lower transparency**
             color="cyan",  
-            s=5,  # **Smaller point size**
+            s=20,  # **Smaller point size**
             label="Raw Data"
         )
 
