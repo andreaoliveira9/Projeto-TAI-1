@@ -72,7 +72,7 @@ double calculateAverageInformation(const unordered_map<string, unordered_map<cha
         totalInfo += logProb;
     
         // Output per-symbol probability for plotting
-        cout << i << " " << logProb << " " << symbol << endl;
+        // cout << i << " " << logProb << " " << symbol << endl;
     }
     
     return totalInfo / countSymbols;
@@ -123,10 +123,10 @@ int main(int argc, char* argv[]) {
     }
     
     saveModelBinary(contextCounts, "model.bin");
-    cout << "Modelo salvo em binário no ficheiro model.bin" << endl;
+    // cout << "Modelo salvo em binário no ficheiro model.bin" << endl;
     
     double averageInfo = calculateAverageInformation(contextCounts, text, k, alpha);
-    cout << "Conteúdo Médio de Informação: " << averageInfo << " bits por símbolo" << endl;
+    cout << averageInfo << endl;
     
     return 0;
 }
