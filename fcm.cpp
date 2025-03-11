@@ -66,7 +66,7 @@ double calculateAverageInformation(const unordered_map<string, unordered_map<cha
             totalCount += count;
         }
         
-        double probability = (   + alpha) / (totalCount + alpha * alphabetSize);
+        double probability = ( symbolCount + alpha) / (totalCount + alpha * alphabetSize);
         double logProb = -log2(probability);
 
         totalInfo += logProb;
