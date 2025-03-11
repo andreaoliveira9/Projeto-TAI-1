@@ -7,26 +7,23 @@
 int CArrayTests()
 {
     printf("\n");
-    printf("\nSorted array: ");
-    for (i = 0; i <= counter; i++)
-            {
-                             weight += 1;
     }
-    return right + 1;
 }
-
-int getSmall(int *a, int j, int left, int pivot)
+struct Stack *createStack()
 {
-    for (int k = j; k >= left; k--)
-    {
-        if (i < len)
-            {
-            out_int[L - i - 1] = buffer[i] - 0x30;
+    struct Stack *stack = malloc(sizeof(struct ListNode));
+        tmp->data = x;
+        tmp->next = ptr->next;
+            ptr->next->next = NULL;
+            }
         }
+
+        res += d * ord;          ord *= 10;
     }
 
-    modifiedBinarySearch(mat, n, m, x);
+    printf("\n the number in binary is: ");
 
-    for (int i = 3; i <= squareRoot; i += 2)
-    {
-        if (is_
+        for (j = i - gap; j >= 0 && array[j] > array[j + gap]; j = j - gap)
+                array[i] = rand() % range + 1;
+
+    show_data(array, size
