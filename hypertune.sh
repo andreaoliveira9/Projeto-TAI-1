@@ -6,7 +6,7 @@ A_VALUES="0.01,0.05,0.1,0.2,0.5"
 
 # Define the executable and input file
 EXECUTABLE="./fcm"
-INPUT_FILES="sequence1.txt,sequence2.txt,sequence3.txt,sequence5.txt"
+INPUT_FILES="sequence4.txt"
 
 # Invoke hyperfine with embedded lists
 
