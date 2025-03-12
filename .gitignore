@@ -37,3 +37,4 @@ generator
 *.bin
 venv
 .vscode
+img
