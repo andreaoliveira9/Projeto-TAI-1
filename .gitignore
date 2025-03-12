@@ -31,7 +31,6 @@
 *.out
 *.app
 
-sequences
 fcm
 generator
 *.bin
