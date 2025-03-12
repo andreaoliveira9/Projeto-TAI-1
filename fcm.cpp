@@ -10,13 +10,11 @@
 
 using namespace std;
 
-// Função para exibir instruções de uso
 void printUsage(const string& progName) {
     cout << "Usage: " << progName << " <input_file> -k <order> -a <smoothing_parameter>" << endl;
     cout << "Example: " << progName << " text.txt -k 3 -a 0.01" << endl;
 }
 
-// Função para salvar o modelo binário
 void saveModelBinary(const unordered_map<string, unordered_map<char, int>>& contextCounts, const string& filename) {
     ofstream out(filename, ios::binary);
     if (!out) {
@@ -44,7 +42,6 @@ void saveModelBinary(const unordered_map<string, unordered_map<char, int>>& cont
     out.close();
 }
 
-// Função para calcular o conteúdo médio de informação
 double calculateAverageInformation(const unordered_map<string, unordered_map<char, int>>& contextCounts, const string& text, int k, double alpha) {
     unordered_set<char> alphabet(text.begin(), text.end());
     int alphabetSize = alphabet.size();
@@ -123,10 +120,10 @@ int main(int argc, char* argv[]) {
     }
     
     saveModelBinary(contextCounts, "model.bin");
-    // cout << "Modelo salvo em binário no ficheiro model.bin" << endl;
+    cout << "Model saved to model.bin" << endl;
     
     double averageInfo = calculateAverageInformation(contextCounts, text, k, alpha);
-    cout << averageInfo << endl;
+    cout << "Average Information Content: " << averageInfo << " bits per symbol" << endl;
     
     return 0;
 }

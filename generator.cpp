@@ -99,7 +99,6 @@ bool processArguments(int argc, char *argv[], int &k, double &alpha, string &pri
     return true;
 }
 
-// Função para gerar um modelo de previsão baseado no texto de entrada
 void buildModel(unordered_map<string, unordered_map<char, int>> &contextCounts, const string &trainingText, int k)
 {
     for (size_t i = k; i < trainingText.size(); i++)
@@ -198,7 +197,7 @@ string generateText(const unordered_map<string, unordered_map<char, int>> &conte
         {
             currentContext = findClosestContext(contextCounts, currentContext, rng);
             if (currentContext.empty())
-                break; // If no similar context exists, stop
+                break;
         }
 
         unordered_map<char, double> probabilities;
