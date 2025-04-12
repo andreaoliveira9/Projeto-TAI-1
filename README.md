@@ -1,4 +1,8 @@
-# Finite-Context Model (Markov Models) - Fcm and Generator Programs
+# Projeto-TAI-1
+
+Primeiro projeto Teoria Algorítmica da Informação
+
+Nota: 18
 
 ## Overview
 This repository contains two programs:
